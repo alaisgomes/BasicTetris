@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tetris - Game</title>
+    <script src="library/jquery-2.2.3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="library/style.css" >
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/tetris-heart.png">
+
+
+
+</head>
+
+<body>
+    <div id="container">
+ 		<div id="boardcontainer">
+            <h1 id="newgame">Press '<span>n</span>' to start a new game</h1>
+            <h1 id="paused">Game is paused. Press <span>p</span> to resume</h1>
+			<canvas id="gameCanvas" width="320" height="544"></canvas>
+
+		</div>
+
+
+		<div id="sidemenu">
+
+			<h1><a href="index.html">Tetris</a></h1>
+			
+
+
+            <div id="gameinfo">
+                <h3><img src="images/game.png" width="30px;" /> Current Game</h3>
+                Lines: <span id="lines"></span> <strong> # </strong> Current Score: <span id="score"></span><br>
+
+
+                <h3 id="help"><img src="images/help.png" height="30px;" /> Help</h3>
+                <table id="helpInfo">
+                    <tr><td><span class="keyboard"><img src="images/up.gif" width="13px;" /></span> Flip to right</td>
+                    <td><span class="keyboard"><img src="images/left.gif" width="13px;" /></span> Move left</td></tr>
+                    <tr><td><p><span class="keyboard"><img src="images/right.gif" width="13px;" /></span> Move right </td>
+                    <td><span class="keyboard"><img src="images/down.gif" width="13px;" /></span> Falls down faster</td></tr>
+                    <tr><td><span class="keyboard">p</span>  Pause</td>
+                    <td><span class="keyboard">e</span>  Terminate</td></tr>
+                    <tr><td><span class="keyboard">n</span>  New Game</td><td></td> </tr>
+                </table>
+            </div>
+		</div>
+
+    </div>
+    <script type="text/javascript" src="library/BulkImageLoader.js"></script>
+   	<script type="text/javascript" src="library/gameEngine.js"></script>
+    <script type="text/javascript">
+        $( "#help" ).click(function() {
+            $("#helpInfo").animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+    </script>
+</body>
+</html>

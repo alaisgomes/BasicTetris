@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+
+/* Basic formatting */
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #e9e9e9;
+}
+
+/* Form styling from : http://andytran.me */
+.form-container {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  padding: 30px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align: center;
+}
+.form-container .logo {
+  background-color: #b80101;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 30px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  box-sizing: border-box;
+}
+.logo img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.form-container input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form-container button {
+  outline: 0;
+  background-color: #b80101;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form-container .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form-container .message a {
+  color: #EF3B3A;
+  text-decoration: none;
+}
+.form-container .register-form {
+  display: none;
+}
+
+.form-container .error {
+  margin: 15px 0 0;
+  color: #b80101;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+h1, h2, h1 a {
+	font-family: "Press Start 2P", sans-serif;
+  text-decoration: none;
+	color: #333333;
+	text-align: center;
+}
+
+#container {
+  background: #FFFFFF;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align: center;	
+  height: 600px;
+  clear: both;
+}
+
+/* Game board styling*/
+#boardcontainer {
+	float: left;
+    background-color: black;
+    border-left: 3px #b80101 solid;
+    border-right: 3px #b80101 solid;
+    border-bottom: 3px #b80101 solid;
+    width: 320px;
+    height: 544px;
+    text-align: center;
+}
+
+#boardcontainer span {
+  color: #b80101;
+}
+#boardcontainer h1 {
+  color: #b80101;
+  font-family: "Press Start 2P", sans-serif; 
+  color: white;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+
+/*Menu */
+#sidemenu {
+	float: right;
+	width: 300px;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 10px;
+	margin: 6px;
+	text-align: center;
+	color: white;
+	background-color: #b80101;
+	font-size: 10pt;
+}
+
+nav a:hover {
+	background-color: #333333;
+}
+
+#sidemenu h3 {
+	font-family: "Press Start 2P", sans-serif ;
+	font-size: 10pt;
+	margin: 30px;
+	color: #787878;
+}
+
+/*Other Menu options*/
+
+#infocontainer {
+  float: left;
+  width: 400px;
+}
+
+table#ranking {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 11pt;
+    margin-bottom: 2%;
+}
+
+table#ranking td, table th {
+    text-align: left;
+    padding: 5px;
+}
+
+table#ranking tr th {
+    background-color: #005A5A;
+    color: white;
+}
+
+table#ranking tr:nth-child(even){
+    background-color: #289191; /*fallback*/
+    background-color: rgba(40, 145, 145,0.8);  
+}
+
+#gameinfo {
+  font-size: 10pt;
+  text-align: left;
+  padding: 10px;
+}
+
+#paused {
+  background-color: black;
+}
+
+div#gameinfo h3 {
+  color: #004040;
+  text-align: left;
+}
+
+
+#helpInfo {
+  display: none;
+}
+span.keyboard {
+
+  color: white;
+  font-family: "Press Start 2P", sans-serif ;
+  padding: 4px;
+  background-color:#c83333;
+  font-size: 10pt;
+  text-align: center;
+}
+
+table#helpInfo {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table#helpInfo tr td {
+    width: 50%;
+    padding: 5px;
+}
+
+strong {
+  color: #c83333;
+}
+
+ul li {
+  padding: 7px;
+  list-style-type: none;
+  text-align: left;
+}
+ ul li span {
+  font-weight: bold;
+  padding: 3px;
+  margin-right: 20px;
+}
+
+a button#bstats {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+button#bstats {
+  outline: 0;
+  background-color: #8A8989;
+  border: 1px #595858 solid;
+  padding: 10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 13px;
+}
+
+button#bstats:hover {
+  color: #FFFFFF;
+  background-color: #595959;
+
+}
+
+#updated {
+  display: none;
+}
